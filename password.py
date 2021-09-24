@@ -3,8 +3,9 @@ def main():
     while is_valid_password(password):
         print("不满足最小长度，请重新设置")
         break
-"""判断密码长度是否合格 合格则输出相应* 不合格则重新输入"""
+
 def is_valid_password(password):
+    """判断密码长度是否合格 合格则输出相应* 不合格则重新输入"""
     if len(password) > 6:
         i = 1
         for char in password:
